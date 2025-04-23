@@ -1,0 +1,84 @@
+/* Estilos dedicados para el login */
+
+.login-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-form {
+  background: #262d3b
+  ;
+  padding: 60px 38px;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #0002;
+  min-width: 300px;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-form h2 {
+  margin-bottom: 16px;
+  color: #788cad;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;  
+}
+
+.login-form input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #66789cfd;
+  border: 0.1px solid #5e6e8880;
+  transition: border 0.2s, background 0.2s, color 0.2s;
+}
+
+
+.login-form input::placeholder {
+  color: #42506b;
+  opacity: 1;
+}
+
+.login-form input:focus {
+  outline: none;
+  border: 1.5px solid #5e6e88;
+}
+
+.login-form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  background: #5e6e88;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-form button[type="submit"]:hover {
+  background: #42506b;
+}
+
+.login-form .login-error {
+  color: #e74c3c;
+  margin-bottom: 8px;
+  text-align: center;
+  font-size: 0.97rem;
+}
+
+.login-button {
+  background: #252c38 !important;
+  border-radius: 6px !important;
+  border: 1.5px solid #5e6e88 !important;
+  margin-bottom: 8px !important;
+  font-size: 1rem !important;
+  font-weight: 300
+} 

@@ -1,0 +1,47 @@
+/* Estilos dedicados para la animación y mensaje de bienvenida */
+
+.welcome-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+
+}
+
+.welcome-card {
+  padding: 40px 32px;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #0003;
+  text-align: center;
+  min-width: 320px;
+  max-width: 90vw;
+  animation: welcome-pop 0.6s cubic-bezier(.6,-0.28,.74,.05) both;
+  background: #2A313C;
+}
+
+@keyframes welcome-pop {
+  0% {
+    opacity: 0;
+    transform: translateY(-120px) scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.welcome-title {
+  margin: 0;
+  font-size: 2.2rem;
+  color:#5e6e88;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.welcome-msg {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  color:#5e6e8893;
+
+}

@@ -1,0 +1,28 @@
+@media (max-width: 500px) {
+  .item-card-content {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.55rem;
+  }
+  .item-card-title {
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 0.3rem;
+    overflow: hidden;
+  }
+  .item-card-qty,
+  .item-card-provider {
+    display: none !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .item-card-title {
+    width: 60px;
+  }
+}
+  

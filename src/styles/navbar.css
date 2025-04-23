@@ -1,0 +1,74 @@
+/* Estilos dedicados al navbar */
+
+.navbar {
+  width: 100%;
+  background: #23272f;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 8px #0002;
+  z-index: 100;
+}
+
+.navbar-inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-btn-menuList,
+.navbar-btn-logout {
+  background: none;
+  border: none;
+  color: #5e6e88;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.navbar-btn-menuList.active {
+  background: #5e6e88;
+  color: #fff;
+}
+
+.navbar-btn-logout:hover,
+.navbar-btn-menuList:hover {
+  background: #42506b;
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .navbar-inner {
+    padding: 0 6px;
+  }
+  .navbar-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+  }
+  .navbar-buttons {
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+  }
+}
